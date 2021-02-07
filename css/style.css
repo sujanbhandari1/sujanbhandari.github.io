@@ -1,0 +1,139 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300;1,400;1,600;1,700&display=swap'); */
+
+body{
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+}
+.topic_head{
+	font-family: serif;
+}
+.container-fluid{
+	/* padding: 0px 0px; */
+	font-family: 'Open Sans', sans-serif;
+ }
+html{
+	scroll-behavior: smooth;
+}
+.bg-dark{
+	background-color: #07527A !important ;
+}
+
+.nav-link{
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #F6F9FD;
+}
+.navbar-brand{
+	font-family: sans-serif;
+	text-transform: uppercase;
+	text-decoration: rgb(148, 140, 30);
+
+}
+/* .hello */
+.hello{
+	background-image:url(web.jpg);
+	width: 100%;
+	height: auto;
+	background-position: center;
+	display: flex;
+	background-size: 100% auto ;
+	background-repeat: no-repeat;
+}
+/* end hello */
+.nav-item{
+	margin: 0 18px;
+	
+
+}
+
+}
+.w-100 {
+  width: 100% !important;
+  height: 75vh;
+}
+.image{
+	height: 1000px;
+}
+/*navigation part end*/
+
+/*about me css start*/
+.aboutme{
+	padding: 50px 0;
+	text-align: center;
+	background-color: #5C8AC8;
+}
+/* .aboutme h1{
+	font-size: 40px;
+	margin-bottom: 55px;
+	color: 	#9FE2BF;
+} */
+.aboutme p{
+	font-size: 20px;
+	color: #F6F9FD;
+}
+/*about me css end*/
+
+/*service css start*/
+#skills {
+	background-color: #d5e6fd;
+}
+.service_title h1{
+	text-align: center;
+}
+/*service css end*/
+
+
+/*blog css start*/
+
+.blog_h1{
+	text-align: center;
+}
+
+.main-row{
+	margin-top: 8%;
+	margin-bottom: 4%;
+	/*margin-right: 8%;*/
+	background-color: white;
+	box-shadow: 0 0 10px 10px rgba(0,0,0,.05);
+	border-radius: 0.5rem;
+}
+.img-blog img{
+	/* width: 100%;
+	height: 100%; */
+	transform: translateY(-35px);
+	object-fit: cover;
+	box-shadow: 0 0 10px 10px rgba(0,0,0,.05);
+	margin-left: 10px;
+
+}
+.card_img{
+	width: 60%;
+	height: 60%;
+	float: center;
+}
+.img{
+	width: 100%;
+	height: auto;
+}
+/* contact css */
+#contact{
+	background-color: rgba(0,0,0,.05);
+}
+.form_content{
+	box-shadow: 0 0 10px 10px rgba(0,0,0,.05);
+	border-radius: 10px;
+	background: #fff;
+	padding: 30px 10px;
+	/* margin-bottom: 10px; */
+
+}
+.contact_ h3{
+	text-align: center;
+}
+
+/* footer */
+ .footer-copyright{
+	 background-color: #07527A;
+ }
