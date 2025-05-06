@@ -1,319 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>sujan bhandari</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css\style.css">
-  <link rel="icon" href="images\cv.jpg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sujan Bhandari | Flutter Developer</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #0d47a1;
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background: #1565c0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.8rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      color: #0d47a1;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+    .project-card h3 {
+      margin-top: 0;
+      color: #1565c0;
+    }
+    .project-card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #0d47a1;
+      text-decoration: underline;
+    }
+    .contact {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    footer {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <div class="container-fluid">
-    <!-- <div class="container-fluid"> -->
-    <!-- <div class="container-fluid"> -->
+  <header>
+    <h1>Sujan Bhandari</h1>
+    <p>Flutter Developer | Firebase Enthusiast | Clean Code Advocate</p>
+  </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-      <a class="navbar-brand text-white" href="index.html"><img src="images\logo.png" style="height: 35px; width: 35px;"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarhambug"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-      <div class="collapse navbar-collapse" id="navbarhambug">
-        <ul class="nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link active" href="index.html" aria-current="page">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about_me">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#blog-id">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Me</a>
-          </li>
-        </ul>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm Sujan, a passionate Flutter developer with several years of experience building mobile applications using Flutter, Firebase, and modern state management tools like Riverpod and GetX. I love translating ideas into apps that are both functional and visually appealing.
+    </p>
+    <p>
+      I'm constantly learning and improving my skills to stay updated with industry trends. My experience spans from solo projects to collaborating with companies like Naxa Pvt Ltd.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Greenway Nepal</h3>
+        <p>A sustainability app promoting green living by tracking carbon footprints based on user activity.</p>
+        <p><strong>Stack:</strong> Flutter, Firebase, Google Maps API</p>
+        <a href="#">View More</a>
       </div>
-    </nav>
-    <!-- </div> -->
-    <!-- large picture start -->
-    <div class="container-fluid pt-0 pl-0 pr-0 pb-0">
-      <img src="images\web1.jpg" class="img-responsive img img-fluid" alt="landing page sujan bhandari image">
-    </div>
 
-    <!-- carousel end -->
+      <div class="project-card">
+        <h3>Mero Hishab</h3>
+        <p>A personal finance tracker with intuitive dashboards, expense categorization, and local storage.</p>
+        <p><strong>Stack:</strong> Flutter, SQLite, Riverpod</p>
+        <a href="#">View More</a>
+      </div>
 
-    <div class="container-fluid pt-0 pl-0 pr-0 pb-0">
-      <div class="aboutme" id="about_me">
-        <div class="container">
-          <h1 class="topic_head"> About Me</h1>
-          <div class="row">
-            <div class="col">
-              <p>I am a student of Itahari International college, where I am currently studying BSc (Hons) Computing.
-                It is always good to be learning new things about technology and watch myself grow and collect many
-                experiences in the process of learning.
-              </p>
-              <p>The interest in technology related topics pulls me to study more about it in depth, so I join to see myself as<em><b> an IT
-                    graduate</b></em> in the future.  I am also a <b>Web Developer</b>, <b>Application Developer</b>
-                and<b> Graphic Designer</b>.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="project-card">
+        <h3>Shaasan</h3>
+        <p>Citizen engagement app for governance that enables issue reporting and voting features.</p>
+        <p><strong>Stack:</strong> Flutter, Firebase, REST APIs</p>
+        <a href="#">View More</a>
       </div>
     </div>
-    <!-- end of aboutme -->
+  </section>
 
-
-
-    <div class="container-fluid pt-0 pl-0 pr-0 pb-0 mr-0 " id="skills">
-      <div class="service_title">
-        <h1 class="topic_head">Skills</h1>
-      </div>
-      <div class="row">
-        <div class="col-md-4 mt-4">
-          <div class="card text-center card_service">
-            <img src="images\card1.png" alt="web development" class="card-img-top mx-auto card_img img-responsive">
-            <div class=" card-body">
-              <h4 class="card-title"><b> Web Development</b></h4>
-              <p class="card-text">A website is the one of the greatest ways of demonstrating your product or skills on the internet,
-                 having a single personal website to deliver your work to the world may make a huge difference, <em><b>well do you need one? you can contact me now.</b></em>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mt-4">
-          <div class="card text-center card_service">
-            <img src="images\card2.png" alt="desktop application" class="card-img-top mx-auto card_img img-responsive">
-            <div class=" card-body">
-              <h4 class="card-title"><b> Desktop application</b></h4>
-              <p class="card-text">If you own a company or any shop or market and you are still handling your work on paper well you are not running out of time everyday.
-                 Try using some software to handle your calculation or records do you want one? You can contact me, I<b><em> can build software</em> for your suitable business style.</b>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mt-4">
-          <div class="card text-center card_service">
-            <img src="images\card3.png" alt="desktop application" class="card-img-top mx-auto card_img img-responsive">
-            <div class=" card-body">
-              <h4 class="card-title"><b> Logo designing</b></h4>
-              <p class="card-text">If you own any business, club or hotel & restaurant you need to <em>create your brand</em> glowing 
-                over the market and hold your position higher with great <em><b>renown with your brand logo</b></em>.
-                 If you don't have one just order me now. contact for more details
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p><strong>Email:</strong> <a href="mailto:sujan.dev@example.com">sujan.dev@example.com</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/sujanbhandari" target="_blank">@sujanbhandari</a></p>
+      <p><strong>LinkedIn:</strong> <a href="#">Your LinkedIn Profile</a></p>
+      <p><strong>Resume:</strong> <a href="#">Download Resume (PDF)</a></p>
     </div>
+  </section>
 
-    <!-- blog start -->
-    <div class="container mt-5 blog-id" id="blog-id">
-      <h1 class="blog_h1 mb-5 topic_head">Blog</h1>
-      <div class="row">
-        <div class="col-8">
-          <div class="row main-row ">
-            <div class="col-md-4 col-xs-3 ">
-              <div class="img-blog">
-                <img src="images\anger.png" alt="anger management" class="img-responsive">
-              </div>
-            </div>
-            <div class="col-md-7 pt-4 ml-auto">
-              <h3>Anger management</h3>
-
-              <p>Many people around us are suffering daily because of their unmanaged anger and hyper behaviour.
-                 Many attempts on controlling their anger went unsuccessful so people usually end up doing messy things.
-                  it becomes hard to express things in a calm and healthy environment<small class="disabled">....</small>
-              </p>
-              <button class="btn mb-3 btn-dark text-center" data-target="#angrmodal" data-toggle="modal">See
-                more</button>
-
-              <div class="modal fade " id="angrmodal">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h3 class="text-center">Anger management</h3>
-                      <button type="button" class="close text-center" data-dismiss="modal">&times;</button>
-                    </div>
-
-                    <div class="modal-body text-center">
-                      <i class="fas fa-angry fa-3x center"></i>
-                      <p>Many people around us are suffering daily because of their unmanaged anger and hyper behaviour.
-                        Many attempts on controlling their anger went unsuccessful so people usually end up doing messy things.
-                         It becomes hard to express things in a calm and healthy environment.</p>
-                      <p>one should be self aware if they identify themselves through the issue of their anger management and try to recover themself
-                         by keeping their mental state calm, doing exercise, yoga or meditation.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="row justify-content-end mt-5">
-        <div class="col-8">
-          <div class="row main-row ">
-            <div class="col-sm-4 ">
-              <div class="img-blog">
-                <img src="images\music.png" alt="music and life" class="img-responsive">
-              </div>
-            </div>
-            <div class="col-md-7 pt-4 ml-auto">
-              <h3>Life and music</h3>
-
-              <p>Music is the art of arranging sounds in time to produce a composition through the elements of melody,harmony, rhythm, and timbre.
-              Music is the way to express the emotions and situation. Among those many sounds around us, music is only the best sound that can make people feel pleasant and stress free..
-              </p>
-              <button class="btn mb-3 btn-dark text-center" data-target="#naturemodal" data-toggle="modal">See
-                more</button>
-
-
-              <div class="modal fade " id="naturemodal">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h3 class="text-center">Life and music</h3>
-                      <button type="button" class="close text-center" data-dismiss="modal">&times;</button>
-                    </div>
-
-                    <div class="modal-body text-center ">
-                      <i class="fab fa-canadian-maple-leaf fa-3x"></i>
-                      <p>Music is the art of arranging sounds in time to produce a composition through the elements of melody,harmony, rhythm, and timbre.
-                        Music is the way to express the emotions and situation. Among those many sounds around us, music is only the best sound that can make people feel pleasant and stress free ..
-                      </p>
-                      <p>Music can be a good friend for the people having a bad time in their life.
-                         We can relate life to music with many phases.
-                         Music can motivate one individual to gain strength and gain positive vibe in their life.
-                          Music is the best way of entertainment and enjoyment and is capable of making us feel emotions, think, dream, have fun and create.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- blog end -->
-
-    <!-- contact section -->
-    <div class="container-fluid contact_" id="contact">
-      <h3>Contact me</h3>
-      <div class="row justify-content-center">
-        <div class="col-10  pb-5">
-          <form class="form_content">
-            <div class="form-group">
-              <label><i class="far fa-user"></i> Name</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Enter your name">
-            </div>
-            <div class="form-group">
-              <label><i class="fas fa-phone"></i> Phone number</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Enter your phone number">
-            </div>
-            <div class="form-group">
-              <label><i class="fas fa-envelope"></i> Email</label>
-              <input type="E-mail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Enter your E-mail">
-              <small id="emailHelp" class="form-text text-muted">your E-mail will be kept secret</small>
-            </div>
-            <div class="form-group">
-              <label><i class="fas fa-map-marked-alt"></i> Address</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Enter your address">
-            </div>
-            <div class="form-group">
-              <label><i class="fas fa-comment-alt"></i> send me a message</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-block">Submit</button>
-          </form>
-          <div class=" container mt-3 text-center">
-            <p><b><i class="fas fa-phone"></i> phone number: +9779862167322</b></p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="page-footer bg-dark pl-0 pr-0">
-      <div class="bg-secondary">
-        <div class="row py-4 d-flex align-items-center">
-          <div class="col md-12 text-center">
-            <a href="https://www.facebook.com/suryabhandari111" target="_blank"><i
-                class="fab fa-facebook text-white mr-4 fa-2x"></i></a>
-            <a href="https://www.instagram.com/stanboysuzan/?hl=en" target="_blank"><i
-                class="fab fa-instagram text-white mr-4 fa-2x"></i></a>
-            <a href="https://twitter.com/sujanbhandari_1" target="_blank"><i
-                class="fab fa-twitter text-white mr-4 fa-2x"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="container text-center text-md-left mt-5 bg">
-        <div class="row">
-          <div class="col-md-3 mx-auto mb-4">
-            <h6 class="text-uppercase font-weight-bold">Final statement</h6>
-            <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 150px; height:2px;">
-            <p class="text-white">Hope the whole experience of visiting my website was overall good, enjoy your
-              remaining
-              time ahead, thank you! </p>
-          </div>
-
-          <div class="col-md-3 mx-auto mb-4 nvbr">
-            <h6 class="text-uppercase font-weight-bold">Contents</h6>
-            <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 100px; height:2px;">
-            <ul class="list-unstyled">
-              <li class="my-2"><a href="index.html" class="text-white">Home</a></li>
-              <li class="my-2"><a href="#about_me" class="text-white">About Me</a></li>
-              <li class="my-2"><a href="#skills" class="text-white">Skills</a></li>
-              <li class="my-2"><a href="#blog-id" class="text-white">Blog</a></li>
-              <li class="my-2"><a href="#contact" class="text-white">Contact Me</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-3 mx-auto mb-4 ">
-            <h6 class="text-uppercase font-weight-bold">Find more</h6>
-            <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 100px; height:2px;">
-            <p class="text-white"><i class="fas fa-at"></i> sujan.bhandari71@yahoo.com</p>
-            <p class="text-white"><i class="fas fa-location-arrow "></i> Urlabari,Morang, Nepal</p>
-
-
-
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright text-center py-3 bg-secondary">
-        <p class="text-white">&copy; copyright
-          <a href="#" class="text-white">SujanBhandari.com.np</a>
-        <p class="text-white"> All right reserved |
-          Designed by Sujan Bhandari </p>
-        </p>
-      </div>
-    </footer>
-  </div>
+  <footer>
+    <p>&copy; 2025 Sujan Bhandari. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
